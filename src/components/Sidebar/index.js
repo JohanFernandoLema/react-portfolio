@@ -12,62 +12,64 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="nav-bar">
-      <Link className="logo" to="/">
-        <img src={LogoS} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
-      </Link>
-      <nav>
-        <NavLink exact="true" activeclassname="active" to={'/'}>
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          className="about-link"
-          to={'/about'}
-        >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          className="contact-link"
-          to={'/contact'}
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
-      </nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/johan-lema-farinango-a02b11220/"
-            target="_blank"
-            rel="noreferrer"
+    <>
+      <div className="nav-bar">
+        <Link className="logo" to="/">
+          <img src={LogoS} alt="logo" />
+          <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        </Link>
+        <nav>
+          <NavLink exact="true" activeclassname="active" to={'/'}>
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            className="about-link"
+            to={'/about'}
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/johan_srfernando/"
-            target="_blank"
-            rel="noreferrer"
+            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            className="contact-link"
+            to={'/contact'}
           >
-            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/JohanFernandoLema"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-        </li>
-      </ul>
-    </div>
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          </NavLink>
+        </nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/johan-lema-farinango-a02b11220/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/johan_srfernando/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JohanFernandoLema"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
   )
 }
 
