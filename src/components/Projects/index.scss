@@ -1,0 +1,32 @@
+.wrapper {
+  width: 80%;
+  margin: 3rem auto;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  .firstProject {
+    padding: 2rem;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    .project {
+      width: 100%;
+      height: 50%;
+    }
+    width: 30%;
+    background-color: #fff;
+    .paragraph {
+      font-size: 1.5rem;
+    }
+    .icon {
+      font-size: 40px;
+      color: #000;
+    }
+  }
+  .firstProject:hover {
+    transform: scale(1.1);
+  }
+}
+@keyframes identifier {
+}
